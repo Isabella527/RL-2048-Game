@@ -2,20 +2,22 @@
 
 Reinforcement Learning agent trained to master the game of 2048 using Deep Q-Networks (DQN).
 
-## 🚀 Overview
+## Overview
 
 This project explores the use of Deep Reinforcement Learning to solve the game 2048, a stochastic, high-dimensional puzzle environment.
 
 We model the game as a Markov Decision Process (MDP) and train an agent using Deep Q-Learning (DQN) to learn optimal strategies through self-play.
 
 ### 🎮 Gameplay GIF
+<img width="720" height="754" alt="Untitled design" src="https://github.com/user-attachments/assets/6f108d40-63c9-4e7b-a5aa-42e5e95ee90c" />
 
 
-### 🎯 Objectives
+###  Objectives
 Build an RL agent capable of playing 2048 effectively
 Design meaningful state representations
 Develop a reward function that encourages strategy
 Evaluate performance against baseline methods
+
 ### 🕹️ Game Environment
 4×4 grid
 Actions: Left, Right, Up, Down
@@ -26,6 +28,7 @@ Fully connected neural network
 Input: 256-dimensional vector (one-hot encoded board)
 Hidden layers: 256 → 128
 Output: 4 Q-values (one per action)
+
 ### 🏆 Reward Design
 
 The agent is trained using a composite reward function:
@@ -70,7 +73,7 @@ Comparison
 
 # put picture here
 
-### 🧩 Learned Strategies
+### Learned Strategies
 
 The agent independently learns:
 
@@ -93,7 +96,7 @@ python src/main.py --agent dqn --mode evaluate --load-model models/dqn_final --v
 
 ### Watch gameplay
 python src/main.py --agent dqn --mode play --load-model models/dqn_final --render
-### 🔮 Future Work
+###  Future Work
 Double DQN
 Dueling Networks
 Prioritized Experience Replay
