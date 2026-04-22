@@ -92,6 +92,7 @@ Directional consistency
 src/        → core RL implementation  
 models/     → trained models  
 docs/       → report + slides  
+
 ▶️ How to Run
 pip install -r requirements.txt
 
@@ -108,7 +109,9 @@ Double DQN
 Dueling Networks
 Prioritized Experience Replay
 CNN-based state representation
+
 ### 👥 Authors
 Isabella Opoku-Ware
 Ke-Huan Yeh
 Peter Dordunu
+
