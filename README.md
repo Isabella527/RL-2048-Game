@@ -23,7 +23,8 @@ Evaluate performance against baseline methods
 Actions: Left, Right, Up, Down
 Random tile spawning (2 or 4)
 Terminal state when no moves remain
-### 🧠 Model Architecture
+
+###  Model Architecture
 Fully connected neural network
 Input: 256-dimensional vector (one-hot encoded board)
 Hidden layers: 256 → 128
@@ -34,12 +35,18 @@ Output: 4 Q-values (one per action)
 The agent is trained using a composite reward function:
 
 ✅ Tile merge rewards
+
 ✅ Empty space bonus
+
 ✅ High-value tile bonus
+
 ✅ Monotonicity & smoothness
+
 ❌ Invalid move penalty
+
 ❌ Game over penalty
-### ⚙️ Training Details
+
+###  Training Details
 | Parameter |	Value |
 | --- | --- |
 | Learning Rate |	1e-4 |
@@ -81,7 +88,7 @@ Corner anchoring
 Tile chain building
 Space management
 Directional consistency
-### 📁 Project Structure
+###  Project Structure
 src/        → core RL implementation  
 models/     → trained models  
 docs/       → report + slides  
